@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#Bash script that writes "I am alive!" to the file /tmp/my_process while pausing 
+#for 2 second between these messages.
 
 # Define the PID file path
 PID_FILE="/var/run/my_process.pid"

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Bash script that displays a list of currently running processes
 
 # Header for the output
 echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
