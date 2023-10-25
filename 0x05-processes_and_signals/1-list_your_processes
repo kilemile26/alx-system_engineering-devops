@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#Bash script that displays a list of currently running processes
-
-# Header for the output
-echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
-
-# Use the ps command to list all processes and format the output
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --sort=-%cpu | head -50
