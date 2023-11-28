@@ -12,8 +12,8 @@ else
 
   # Check if the input matches the regular expression
   if input =~ regex
-    puts "#{input}$"
+    puts "#{input}"
   else
-    puts "$"
+    puts ""
   end
 end
