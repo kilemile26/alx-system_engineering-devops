@@ -11,8 +11,8 @@ else
   input = ARGV[0]
 
   # Check if the input matches the regular expression
-  if input =~ regex
-    puts "#{input}"
+  if iif (match = input.match(regex))
+    puts "#{match.pre_match}#{match[0]}"
   else
     puts ""
   end
