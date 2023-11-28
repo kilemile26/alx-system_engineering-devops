@@ -12,7 +12,7 @@ else
 
   # Check if the input matches the regular expression
   if iif (match = input.match(regex))
-    puts "#{match.pre_match}#{match[0]}"
+    puts "#{match.pre_match}"
   else
     puts ""
   end
