@@ -16,6 +16,4 @@ else
   # Check if there are matches and print them
   if !matches.empty?
     puts input
-  else
-    puts ""
-  end
+end
