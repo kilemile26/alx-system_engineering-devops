@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Define the regular expression
-regex = /^[^t]*$/
+regex = /^hbt*n$/
 
 # Check if an argument is provided
 if ARGV.empty?
