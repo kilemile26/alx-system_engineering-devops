@@ -14,4 +14,3 @@ else
   if (match = input.match(regex))
     puts input
   end
-end
