@@ -5,14 +5,17 @@ if ARGV.empty?
   puts "Please provide an argument."
 else
   # Define the regular expression using Oniguruma syntax
-  regex = /School\z/
+  regex = /(?=(School))/
 
   # Get the argument
   input = ARGV[0]
 
+  # Find all matches in the input string
+  matches = input.scan(regex).flatten
+
   # Check if the input matches the regular expression
-  if (match = input.match(regex))
-    puts "#{match.pre_match}"
+  if !matches.empty?
+    puts matches.join
   else
     puts ""
   end
