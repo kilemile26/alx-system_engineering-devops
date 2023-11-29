@@ -18,5 +18,4 @@ else
     puts matches
   else
     puts ""
-  end
 end
