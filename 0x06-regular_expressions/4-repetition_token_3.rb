@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-# Define the regular expression
-regex = /hbt*n/
+# Define the regular expression using Oniguruma syntax with positive lookahead
+  regex = /hbt*n/
 
 # Check if an argument is provided
 if ARGV.empty?
@@ -10,12 +10,13 @@ else
   # Get the argument
   input = ARGV[0]
 
+  # Find all matches in the input string
   matches = input.scan(regex)
 
-  # Check if the input matches the regular expression
+  # Check if there are matches and print them
   if matches
     puts matches.join
   else
-    puts "No match found."
+    puts ""
   end
 end
