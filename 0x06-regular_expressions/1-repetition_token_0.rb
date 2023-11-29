@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
+# Define the regular expression using Oniguruma syntax with positive lookahead
+  regex = /t{2,5}/
+
 # Check if an argument is provided
 if ARGV.empty?
   puts "Please provide an argument."
 else
-  # Define the regular expression using Oniguruma syntax with positive lookahead
-  regex = /t{2,5}/
-
   # Get the argument
   input = ARGV[0]
 
@@ -14,3 +14,4 @@ else
   if (match = input.match(regex))
     puts input
   end
+end
