@@ -10,8 +10,13 @@ else
   # Get the argument
   input = ARGV[0]
 
+  # Find all matches in the input string
+  matches = input.match(regex)
+
   # Check if there are matches and print them
-  if (match = input.match(regex))
-    puts "#{match[0]}"
+  if !matches.empty?
+    puts matches
+  else
+    puts ""
   end
 end
