@@ -13,3 +13,4 @@ else
   # Check if there are matches and print them
   if (match = input.match(regex))
     puts input
+  end
