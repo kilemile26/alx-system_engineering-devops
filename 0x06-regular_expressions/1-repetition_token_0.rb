@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Define the regular expression using Oniguruma syntax with positive lookahead
-  regex = /t{2,5}/
+  regex = /^hbt{1,5}tn$/
 
 # Check if an argument is provided
 if ARGV.empty?
@@ -14,7 +14,7 @@ else
   matches = input.match(regex)
 
   # Check if there are matches and print them
-  if !matches.empty?
+  if matches
     puts input
   else
     puts ""
