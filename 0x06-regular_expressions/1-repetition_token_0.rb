@@ -12,7 +12,7 @@ else
 
   # Check if there are matches and print them
   if (match = input.match(regex))
-    puts #{match[0]}
+    puts input
   else
     puts ""
   end
