@@ -5,12 +5,13 @@
 [[ -f /.dockerenv && $EUID -eq 0 ]] || { echo "Please run in Docker environment with root privileges. Exiting."; exit 1; }
 
 # Configuration
-hosts_file="/etc/hosts"
-backup_file="${hosts_file}.bak"
-entries=("127.0.0.2 localhost" "8.8.8.8 facebook.com")
+#hosts_file="/etc/hosts"
+#backup_file="~/hosts_file"
+#entries=("127.0.0.2 localhost" "8.8.8.8 facebook.com")
 
 # Backup hosts file
-cp "$hosts_file" "$backup_file"
-
-# Modify hosts file
-echo "${entries[@]}" >> "$hosts_file"
+cp /etc/hosts ~/hosts_file
+echo "127.0.0.2 	localhost" > ~/hosts_file
+echo "8.8.8.8 		facebook.com" >> ~/hosts_file
+# modify host
+cp -f ~/hosts_file /etc/hosts
