@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Define the regular expression using Oniguruma syntax with positive lookahead
-  regex = /h^\d{10,10}$/
+  regex = /^\d{10,10}$/
 
 # Check if an argument is provided
 if ARGV.empty?
