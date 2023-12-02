@@ -15,7 +15,7 @@ else
 
   # Check if there are matches and print them
   if matches
-    puts matches.join
+    puts matches.join(",")
   else
     puts ""
   end
