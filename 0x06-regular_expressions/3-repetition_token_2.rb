@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Define the regular expression
-regex = /hbt*n/
+regex = /hbt+n/
 
 # Check if an argument is provided
 if ARGV.empty?

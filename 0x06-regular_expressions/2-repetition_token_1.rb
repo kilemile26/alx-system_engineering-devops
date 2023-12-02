@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Define the regular expression using Oniguruma syntax with positive lookahead
-  regex = /hb*?tn/
+  regex = /hb?t?n/
 
 # Check if an argument is provided
 if ARGV.empty?
