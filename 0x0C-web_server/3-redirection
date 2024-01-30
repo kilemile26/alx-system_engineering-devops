@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
-# Install Nginx
+# redirection to another page following requirements
+# Intall Nginx
 apt-get update
 apt-get install -y nginx
 
