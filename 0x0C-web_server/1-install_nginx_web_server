@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Update the package index
+apt-get update
+
+# Install Nginx
+apt-get install -y nginx
+
+# Create a custom HTML page with "Hello World!"
+echo "Hello World!" > /var/www/html/index.html
+
+# Start Nginx
+/usr/sbin/service nginx start
+
+exit 0
