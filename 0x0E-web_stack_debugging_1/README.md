@@ -131,7 +131,8 @@ Requirements:
 * write a Bash script that configures a server to the above requirements
 
 example:
-"root@966c5664b21f:/# curl 0:80
+
+root@966c5664b21f:/# curl 0:80
 curl: (7) Failed to connect to 0 port 80: Connection refused
 root@966c5664b21f:/#
 root@966c5664b21f:/# ./0-nginx_likes_port_80 > /dev/null 2&>1
@@ -173,6 +174,7 @@ Repo:
 
 
 1. Make it sweet and short "advanced"
+
 Using what you did for task #0, make your fix short and sweet.
 
 Requirements:
@@ -193,7 +195,7 @@ root@966c5664b21f:/# cat -e 1-debugging_made_short | wc -l
 5
 root@966c5664b21f:/# ./1-debugging_made_short
 root@966c5664b21f:/# curl 0:80
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html>
 <head>
 <title>Welcome to nginx!</title>
@@ -217,7 +219,7 @@ Commercial support is available at
 
 <p><em>Thank you for using nginx.</em></p>
 </body>
-</html>
+</html>*/
 root@966c5664b21f:/#
 root@966c5664b21f:/# service nginx status
  * nginx is not running
