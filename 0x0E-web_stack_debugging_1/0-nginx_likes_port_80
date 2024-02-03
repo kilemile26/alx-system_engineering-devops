@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# a Bash script that configures a server to the given requirements
+
+# Update the package list
+apt-get update
+
+# Install Nginx
+apt-get install -y nginx
+
+# Backup default Nginx configuration
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+
+# Configure Nginx to listen on port 80 for all active IPv4 IPs
+sed -i '/listen 80 default_server;/c\    listen 80 default_server ipv4only=on;' /etc/nginx/sites-available/default
+
+# Restart Nginx to apply changes
+service nginx restart
